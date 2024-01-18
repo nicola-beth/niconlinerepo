@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  test-app:
+    container_name: spinning_up_nic
+    build: .
+    ports:
+      - 7001:5000
+    env_file:
+      - .env.secrets
+
